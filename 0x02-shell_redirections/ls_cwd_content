@@ -1,5 +1,5 @@
 total 108
-drwxr-xr-x 2 root root 4096 Jun 16 07:48 .
+drwxr-xr-x 2 root root 4096 Jun 16 08:06 .
 drwxr-xr-x 7 root root  160 Jun 15 14:27 ..
 -rwxr--r-- 1 root root   34 Jun 16 07:07 0-hello_world
 -rwxr--r-- 1 root root   47 Jun 15 08:21 10-no_more_js
@@ -22,9 +22,9 @@ drwxr-xr-x 7 root root  160 Jun 15 14:27 ..
 -rwxr--r-- 1 root root   35 Jun 16 07:14 5-firstlines
 -rwxr--r-- 1 root root   40 Jun 16 07:31 6-third_line
 -rwxr--r-- 1 root root   96 Jun 15 08:01 7-file
--rwxr--r-- 1 root root   35 Jun 15 08:05 8-cwd_state
+-rwxr--r-- 1 root root   38 Jun 16 08:06 8-cwd_state
 -rwxr--r-- 1 root root   36 Jun 15 08:12 9-duplicate_last_line
 -rw-r--r-- 1 root root   17 Jun 15 08:01 \*\\'"Holberton School"\'\\*$\?\*\*\*\*\*:)
 -rw-r--r-- 1 root root  800 Jun 16 07:48 iacta
--rw-r--r-- 1 root root    0 Jun 16 07:56 ls_cwd_content
+-rw-r--r-- 1 root root    0 Jun 16 08:06 ls_cwd_content
 -rw-r--r-- 1 root root 2062 Jun 15 16:35 README.md
