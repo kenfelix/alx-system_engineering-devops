@@ -1,14 +1,30 @@
-total 40
-drwxr-xr-x 2 root root 254 Jun 15 08:06 .
-drwxr-xr-x 6 root root 121 Jun 15 06:48 ..
--rwxr--r-- 1 root root  31 Jun 15 06:51 0-hello_world
--rwxr--r-- 1 root root  30 Jun 15 07:06 1-confused_smiley
--rwxr--r-- 1 root root  27 Jun 15 07:12 2-hellofile
--rwxr--r-- 1 root root  39 Jun 15 07:17 3-twofiles
--rwxr--r-- 1 root root  34 Jun 15 07:20 4-lastlines
--rwxr--r-- 1 root root  34 Jun 15 07:24 5-firstlines
--rwxr--r-- 1 root root  39 Jun 15 07:32 6-third_line
--rwxr--r-- 1 root root  96 Jun 15 08:01 7-file
--rwxr--r-- 1 root root  35 Jun 15 08:05 8-cwd_state
--rw-r--r-- 1 root root  17 Jun 15 08:01 \*\\'"Holberton School"\'\\*$\?\*\*\*\*\*:)
--rw-r--r-- 1 root root   0 Jun 15 08:10 ls_cwd_content
+total 108
+drwxr-xr-x 2 root root 4096 Jun 16 07:48 .
+drwxr-xr-x 7 root root  160 Jun 15 14:27 ..
+-rwxr--r-- 1 root root   34 Jun 16 07:07 0-hello_world
+-rwxr--r-- 1 root root   47 Jun 15 08:21 10-no_more_js
+-rwxr--r-- 1 root root   46 Jun 15 08:27 11-directories
+-rwxr--r-- 1 root root   25 Jun 15 08:33 12-newest_files
+-rwxr--r-- 1 root root   26 Jun 15 08:37 13-unique
+-rwxr--r-- 1 root root   33 Jun 15 08:46 14-findthatword
+-rwxr--r-- 1 root root   40 Jun 15 08:54 15-countthatword
+-rwxr--r-- 1 root root   46 Jun 15 09:02 16-whatsnext
+-rwxr--r-- 1 root root   35 Jun 15 09:08 17-hidethisword
+-rwxr--r-- 1 root root   49 Jun 15 09:15 18-letteronly
+-rwxr--r-- 1 root root   24 Jun 15 09:23 19-AZ
+-rwxr--r-- 1 root root   30 Jun 15 07:06 1-confused_smiley
+-rwxr--r-- 1 root root   22 Jun 15 09:33 20-hiago
+-rwxr--r-- 1 root root   15 Jun 15 09:42 21-reverse
+-rwxr--r-- 1 root root   53 Jun 15 09:49 22-users_and_homes
+-rwxr--r-- 1 root root   31 Jun 16 06:21 2-hellofile
+-rwxr--r-- 1 root root   39 Jun 15 07:17 3-twofiles
+-rwxr--r-- 1 root root   35 Jun 16 06:34 4-lastlines
+-rwxr--r-- 1 root root   35 Jun 16 07:14 5-firstlines
+-rwxr--r-- 1 root root   40 Jun 16 07:31 6-third_line
+-rwxr--r-- 1 root root   96 Jun 15 08:01 7-file
+-rwxr--r-- 1 root root   35 Jun 15 08:05 8-cwd_state
+-rwxr--r-- 1 root root   36 Jun 15 08:12 9-duplicate_last_line
+-rw-r--r-- 1 root root   17 Jun 15 08:01 \*\\'"Holberton School"\'\\*$\?\*\*\*\*\*:)
+-rw-r--r-- 1 root root  800 Jun 16 07:48 iacta
+-rw-r--r-- 1 root root    0 Jun 16 07:56 ls_cwd_content
+-rw-r--r-- 1 root root 2062 Jun 15 16:35 README.md
