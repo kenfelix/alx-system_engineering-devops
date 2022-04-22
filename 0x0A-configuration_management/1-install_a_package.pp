@@ -1,6 +1,6 @@
  # Installs flask
- exec { 'install python packages':
-     command   => 'pip3 install flask flask_restful apiai',
-     path => ['/usr/bin/'],
-     unless  => '/usr/bin/test -f /usr/local/lib/python3.4/dist-packages/flask/app.py'
-  }
+python::pip { 'flask':
+  ensure   => '2.1.0',
+  name     => 'flask',
+  provider => 'pip3'
+}
