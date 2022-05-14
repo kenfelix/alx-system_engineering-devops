@@ -38,12 +38,12 @@ defaults
 
 frontend www
 	bind *:80
-	bind *:443 ssl crt /etc/letsencrypt/live/emmastro.tech/all.pem
+	bind *:443 ssl crt /etc/letsencrypt/live/takjug.tech/all.pem
 	use_backend www
 
 backend www
 	balance roundrobin
     option httpclose
    	option forwardfor
-	server 35-web-01 34.75.10.160:80 check
-	server 35-web-01 35.231.86.187:80 check
+	server 816-web-01 34.139.37.125 check
+	server 816-web-02 34.75.9.253 check
