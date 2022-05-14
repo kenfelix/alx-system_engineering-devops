@@ -9,7 +9,7 @@ sudo apt-get remove certbot, sudo dnf remove certbot, or sudo yum remove certbot
 
 sudo service haproxy stop
 
-sudo certbot certonly -d emmastro.tech # Choose option 2
+sudo certbot certonly -d takjug.tech # Choose option 2
 
 # Location of certificates: /etc/letsencrypt/live/<domain-name>/fullchain.pem
 # Location of private keys: /etc/letsencrypt/live/<domain-name>/privkey.pem
