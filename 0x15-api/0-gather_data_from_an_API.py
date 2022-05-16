@@ -5,8 +5,8 @@
 import requests
 from sys import argv
 
-def main():
-    endpoint = "https://jsonplaceholder.typicode.com/"
+if __name__ == '__main__':
+    endpoint = "https://jsonplaceholder.typicode.com"
     userId = argv[1]
     user = requests.get(endpoint + "users/{}".
                         format(userId), verify=False).json()
@@ -19,6 +19,3 @@ def main():
     print("Employee {} is done with tasks({}/{}):".
           format(user.get('name'), len(completed_tasks), len(todo)))
     print("\n".join("\t {}".format(task) for task in completed_tasks))
-    
-if __name__ == '__main__':
-    main()
