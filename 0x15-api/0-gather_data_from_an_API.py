@@ -5,6 +5,7 @@
 import requests
 from sys import argv
 
+
 def main():
     """Main Function"""
     endpoint = "https://jsonplaceholder.typicode.com/"
