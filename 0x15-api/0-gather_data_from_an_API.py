@@ -6,7 +6,7 @@ import requests
 from sys import argv
 
 def main():
-    endpoint = "https://jsonplaceholder.typicode.com"
+    endpoint = "https://jsonplaceholder.typicode.com/"
     userId = argv[1]
     user = requests.get(endpoint + "users/{}".
                         format(userId), verify=False).json()
