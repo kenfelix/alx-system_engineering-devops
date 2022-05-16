@@ -6,6 +6,7 @@ import requests
 from sys import argv
 
 def main():
+    """Main Function"""
     endpoint = "https://jsonplaceholder.typicode.com/"
     userId = argv[1]
     user = requests.get(endpoint + "users/{}".
