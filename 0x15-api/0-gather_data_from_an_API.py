@@ -1,26 +1,26 @@
 #!/usr/bin/python3
-"""getting data from an api
 """
-
+For given employee ID, returns information about his/her TODO list progress.
+"""
 import requests
-from sys import argv
-
-
-def main():
-    """Main Function"""
-    endpoint = "https://jsonplaceholder.typicode.com/"
-    userId = argv[1]
-    user = requests.get(endpoint + "users/{}".
-                        format(userId), verify=False).json()
-    todo = requests.get(endpoint + "todos?userId={}".
-                        format(userId), verify=False).json()
-    completed_tasks = []
-    for task in todo:
-        if task.get('completed') is True:
-            completed_tasks.append(task.get('title'))
-    print("Employee {} is done with tasks({}/{}):".
-          format(user.get('name'), len(completed_tasks), len(todo)))
-    print("\n".join("\t {}".format(task) for task in completed_tasks))
+import sys
 
 if __name__ == '__main__':
-    main()
+
+    arg = sys.argv[1]
+
+    base = 'https://jsonplaceholder.typicode.com/'
+
+    user_url = base + 'users/{}'.format(arg)
+    user = requests.get(user_url).json()
+    query_params = {"userId": arg}
+    todo_url = base + 'todos'
+    todos = requests.get(url=todo_url, params=query_params).json()
+
+    done = [item.get('title') for item in todos if item.get('completed')]
+
+    print('Employee {} is done with tasks({}/{}):'.
+          format(user.get('name'), len(done), len(todos)))
+
+    for task in done:
+        print("\t {}".format(task))

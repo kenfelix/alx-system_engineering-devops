@@ -1,35 +1,26 @@
 #!/usr/bin/python3
-"""getting data from an api and storing as json dictionary
 """
-
+Get information about all user TODO progress.
+Export data in the JSON format.
+"""
+import json
 import requests
-from sys import argv
 
-
-def main():
-    """Main Function"""
-    users = requests.get("http://jsonplaceholder.typicode.com/users",
-                         verify=False).json()
-    userdict = {}
-    usernamedict = {}
-    for user in users:
-        uid = user.get("id")
-        userdict[uid] = []
-        usernamedict[uid] = user.get("username")
-    todo = requests.get("http://jsonplaceholder.typicode.com/todos",
-                        verify=False).json()
-
-    for task in todo:
-        taskdict = {
-            "task": task.get('title'),
-            "completed": task.get('completed'),
-            "username": usernamedict.get(uid)
-        }
-        uid = task.get("userId")
-
-        userdict.get(uid).append(taskdict)
-    with open("todo_all_employees.json", 'w') as jsonfile:
-        json.dump(userdict, jsonfile)
-        
 if __name__ == '__main__':
-    main()
+
+    base = 'https://jsonplaceholder.typicode.com/'
+    user_url = base + 'users'
+    users = requests.get(user_url).json()
+    todo_url = base + 'todos'
+
+    file = 'todo_all_employees.json'
+    # For every user pick their todos
+    # Conver list of todos to json
+    with open(file, 'w') as f:
+        json.dump({user.get('id'): [{
+            'task': item.get('title'),
+            'completed': item.get('completed'),
+            'username': user.get('username')
+            } for item in requests.get(todo_url,
+                                       params={"userId": user.get('id')}
+                                       ).json()] for user in users}, f)
